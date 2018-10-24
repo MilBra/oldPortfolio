@@ -1,0 +1,428 @@
+body {
+	padding: 0px;
+	margin:0px;
+}
+
+h1 {font-size: 32px;font-family: 'Russo One', sans-serif;}
+h2 {font-size: 26px;font-family: 'Russo One', sans-serif;}
+h3 {font-size: 24px;font-family: 'Russo One', sans-serif;}
+h4 {font-size: 22px;font-family: 'Russo One', sans-serif;}
+h5 {font-size: 20px;font-family: 'Russo One', sans-serif;}
+h6 {font-size: 18px;font-family: 'Russo One', sans-serif;}
+
+.crveno {
+	color:red;
+}
+p {
+	font-family: 'Josefin Sans', sans-serif;
+}
+.bold {
+	font-weight: bold;
+}
+
+/****SIDEBAR, LOGO****/
+
+.sidebar {
+	position: fixed;
+	float: left;
+	background: #020202;
+	width: 20%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.logo {
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding:10px 0px 0px;
+	margin-top: 10px;
+}
+
+.logo a {
+	text-decoration: none;
+	color:white;
+}
+
+.logo a:hover {
+	color:red;
+	transition: all linear 500ms;
+}
+
+.logo a:hover .crveno {
+	color:white;
+	transition: all linear 500ms;
+}
+
+.logo h1 {
+	margin-bottom: 0px;
+}
+.logo h4 {
+	font-size: 14px;
+	margin-top: 0px;
+	font-weight: 400;
+}
+/*****MENI**********/
+
+.nav {
+	width: 100%;
+	margin-top: 80px;
+}
+.nav ul {
+	display: block;
+	padding-left: 0px;
+}
+
+.nav ul li {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+}
+
+.nav ul li a {
+	font-family: 'Russo One', sans-serif;
+	width: 100%;
+	display: block;
+	color:white;
+	padding:10px 0px;
+	text-decoration: none;
+	transition: all linear 1s;
+}
+
+.nav ul li a:hover {
+	background: red;
+	transition: all linear 1s;
+}
+
+.active {background: red;}
+
+/*******SOCIAL*******/
+
+.social {
+	width: 100%;
+    text-align: center;
+   	margin-top: 50px;
+}
+.social a {
+	display: inline-block;
+	color:white;
+	text-decoration: none;
+	padding:0px 5px;
+	font-size: 23px;
+}
+
+.social a:hover {
+	color: red;
+}
+
+/**MENI FUTER***/
+
+.menu-footer {
+	width: 100%;
+	bottom: 0px;
+	color: white;
+	text-align: center;
+	font-size:12px;
+	line-height: 20px; 
+	position: absolute;
+}
+
+
+
+/****SADRZAJ****/
+.content {
+	height: 100%;
+	width: 80%;
+    margin-left: 20%;
+	position: fixed;	
+}
+
+.content-naslovna {
+	height: 100%;
+	text-align: center;
+	padding-top: 150px;
+	padding-right: 150px;
+	background: url(../images/summer.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: grayscale(100%);
+	transition: all linear 1500ms;
+	animation-name:fadeIn;
+	animation-duration: 3s;	
+}
+
+.content-naslovna:hover {
+	filter: grayscale(0%);
+	transition: all linear 1500ms;
+}
+
+.content-naslovna h1, .content-naslovna h3, .content-naslovna h5 {
+	color:white;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 4px #020202;
+	animation-name: slideInUp;
+	animation-duration: 5s;
+}
+
+.content-naslovna h5 {
+	padding-bottom: 50px;
+	animation-name: slideInUp;
+	animation-duration: 5s;
+}
+
+.content-naslovna a {
+	text-align: center;
+	font-size: 28px;
+	border-radius: 10px;
+	padding: 10px 20px;
+	background: red;
+	color: white;
+	text-decoration: none;
+	border:none;
+	margin: 0px 10px;
+	transition: all linear 500ms;
+}
+
+.content-naslovna a:hover {
+	background: #020202;
+	transition: all linear 500ms;
+}
+
+.content-page {
+	height: 100%;
+	width: 80%;
+    margin-left: 20%;
+	position: fixed;
+	background-image: url(../images/back.png);
+	background-repeat: repeat;
+	animation-name:fadeIn;
+	animation-duration: 2s;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+/*** SECOND PAGE ******/
+.content-row {
+    padding: 2% 5%;
+    width: 100%;
+}
+
+.ctn-head {
+	text-align: left;
+	text-transform: uppercase;
+	padding-bottom: 40px;
+	color: #020202;
+	animation-name:slideInDown;
+	animation-duration: 2s;
+	animation-direction: alternate;
+}
+
+.ctn-head h2 {
+	font-size: 2em;
+}
+
+.ctn-info {
+	width: 33%;
+	float: left;
+	margin-bottom: 20px;
+}
+.ctn-info a {
+	color:red;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	transition: all ease 500ms;
+}
+.ctn-info a:hover {
+	color:#020202;
+	text-decoration: underline;
+	transition: all ease 500ms;
+}
+
+.ctn-icon {
+	float: left;
+    color: #020202;
+    text-align: center;
+    border: 1px solid #020202;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    font-size: 40px;
+    line-height: 50px;
+    animation-name: slideInUp;
+	animation-duration: 3s;
+}
+
+.ctn-text {
+	color: red;
+	margin:5px;
+	padding: 0px;
+	float: left;
+	opacity: 1;
+	animation-name: slideInUp;
+	animation-duration: 4s;
+}
+
+.ctn-text p {
+	float: left;
+	margin:5px;
+	font-weight: 700;
+
+}
+.naslov {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #020202;
+}
+
+.about-me {
+	clear: both;
+	width: 90%;
+	padding-top: 40px;
+	animation-name: slideInUp;
+	animation-duration: 5s;
+}
+
+.about-me p {
+	padding: 0px 10px;
+}
+.about-me img {
+	float: left;
+	vertical-align: center;
+	background: silver;
+	margin-right: 20px;
+	width: 180px;
+	margin-bottom: 50px;
+	border:5px solid white;
+}
+
+.count {
+	overflow:hidden;
+	clear: both;
+	margin:20px auto;
+	animation-name: slideInLeft;
+	animation-duration: 4500ms;
+}
+
+.count-info {
+	text-align: center;
+	float: left;
+	width: 23%;
+	margin-right: 5px;
+}
+
+.count-info:nth-of-type(3n) {
+margin-right:0;
+}
+.count-info p {
+	font-family: 'Russo One', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+}
+.count-info h1 {
+	font-size: 22px;
+    letter-spacing: 1px;
+}
+/*********3 PAGE****************/
+
+.work-year {
+	float: left;
+	text-align: left;
+	width: 25%;
+}
+.work-year h1{
+	display: block;
+	margin-bottom:0px;
+}
+.work-year h4 {
+	display: block;
+	margin-top: 0px;
+}
+.work-textarea {
+	padding: 10px 20px;
+	float: left;
+	width: 60%;
+	border: 2px solid black;
+	background: white;
+	position: relative;
+}
+.work-textarea h3 {
+	margin: 0px;
+}
+.trougao {
+	width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: -17px;
+    background: white;
+    transform: rotate(135deg);
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.first {
+	animation-name: fadeInUp;
+	animation-duration: 3s;
+	margin-bottom: 20px;
+}
+
+.second{
+	animation-name: fadeInUp;
+	animation-duration: 4s;
+	margin-bottom: 20px;
+}
+.third{
+	animation-name: fadeInUp;
+	animation-duration: 5s;
+	margin-bottom: 20px;
+}
+
+/********* PAGE 4 ********/
+
+.ctn-skills {
+	width: 45%;
+    float: left;
+    padding: 20px;
+    height: 200px;
+}
+
+.skills-icon {
+	font-size: 60px;
+    float: left;
+    color: red;
+    height: 200px;
+    width: 20%;
+    padding-right: 15px;
+    position: relative;
+}
+
+.skills-icon:after {
+	content: "";
+    border-right: 1px solid red;
+    height: 70px;
+    margin-left: 50px;
+    top: 0px;
+    position: absolute;
+}
+
+.skills-text p {
+	float: left;
+    width: 60%;
+    padding-left: 30px;
+    font-size: 18px;
+    margin-top: 0px;
+    animation-name: slideInRight;
+	animation-duration: 1500ms;
+}
+
+.others-skills {
+	clear: both;
+	width: 80%;
+}
+.prostor {
+	content: "";
+	padding: 20px;
+}
